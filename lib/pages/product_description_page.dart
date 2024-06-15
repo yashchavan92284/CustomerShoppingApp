@@ -72,12 +72,12 @@ class ProductDescriptionPage extends StatelessWidget {
                         backgroundColor:
                             MaterialStateProperty.all(Colors.blue)),
                     onPressed: () {
-                      ctrl.submitOrder(
-                        price: product.price ?? 0,
-                        item: product.name ?? '',
-                        description: product.description ?? '',
-                      );
-                      ctrl.orderSuccess();
+                      // ctrl.submitOrder(
+                      //   price: product.price ?? 0,
+                      //   item: product.name ?? '',
+                      //   description: product.description ?? '',
+                      // );
+                      // ctrl.orderSuccess();
                       Get.snackbar("Success", "Your Order has been placed");
                     },
                     child: const Text(
